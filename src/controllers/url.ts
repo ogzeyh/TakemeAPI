@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { supabase } from "../supabase/supabaseClient";
+import { supabase } from "../supabase/supabaseClient.js";
 import { nanoid } from 'nanoid';
 import { z } from 'zod';
-import { Codes } from "../utils/codes";
+import { Codes } from "../utils/codes.js";
 
 const getAllUrlsSchema = z.object({
     urlIds: z.string()
